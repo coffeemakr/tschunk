@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "JetBrainsMono";
+    font-weight: 400;
+    src: url("font/woff2/JetBrainsMono-Regular.woff2");
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    font-weight: 700;
+    src: url("font/woff2/JetBrainsMono-Bold.woff2");
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    font-weight: 900;
+    src: url("font/woff2/JetBrainsMono-ExtraBold.woff2");
+}
+
+html, body {
+    background-color: rgb(20,20,20);
+    color: #d3dfc2;
+    font-family: "JetBrainsMono", monospace;
+}
+
+h1::before {
+    /* I dont like escaping characters to i put it into the css instead of html */
+    content: "<< ";
+}
+h1::after {
+    content: " >>";
+}
+
+h2::before {
+    content: " < ";
+    white-space: pre;
+}
+h2::after {
+    content: " > ";
+    white-space: pre;
+}
+
+h3::before {
+    content: " - ";
+    white-space: pre;
+}
+h3::after {
+    content: " - ";
+    white-space: pre;
+}
+
+h1, h2, h3 {
+    color: rgb(230,230,150);
+    font-weight: 900;
+    font-size: inherit;
+}
+ul {
+    list-style-type: square;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #ddbe71;
+}
+
+a:hover {
+    color: #ffdc83;   
+}
+
+a:active {
+    color: #ffeab6;   
+}
